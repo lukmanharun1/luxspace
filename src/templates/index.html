@@ -41,7 +41,8 @@
           <!-- START: menu hamburger wrapper -->
           <div class="w-auto">
             <ul
-              class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex"
+              id="menu"
+              class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100"
             >
               <li class="mx-3 py-6 md:py-0">
                 <a href="#" class="text-black hover:text-white hover:underline"
@@ -71,7 +72,7 @@
               <li class="ml-6 block md:hidden">
                 <button
                   id="menu-toggler"
-                  class="relative flex z-50 items-center w-8 h-8 text-black hover:text-white focus:outline"
+                  class="relative flex z-50 items-center w-8 h-8 text-black focus:outline-none"
                 >
                   <svg
                     width="18"
@@ -167,7 +168,7 @@
           <div class="overlay inset-0 bg-black opacity-30 z-10"></div>
           <div class="overlay right-0 bottom-0 md:inset-0">
             <button
-              class="video hero-cta focus:outline-none z-30 modal-tigger"
+              class="video hero-cta focus:outline-none z-30 modal-trigger"
               data-content='<div class="w-screen pb-56 md:w-88 relative z-50">
                 <div class="absolute w-full h-full">
                   <iframe
@@ -191,7 +192,290 @@
       </div>
     </section>
     <!-- END: Section Hero -->
+    <!-- START: Browse The Room -->
+    <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+      <div class="container mx-auto">
+        <div class="flex flex-start mb-4">
+          <h3 class="text-2xl capitalize font-semibold">
+            browse the room <br />
+            that we designed for you
+          </h3>
+        </div>
+        <div class="grid grid-rows-2 grid-cols-9 gap-4">
+          <!-- START: item browse the room 1 -->
+          <div
+            class="relative col-span-9 row-span-1 md:col-span-4 card"
+            style="height: 180px"
+          >
+            <div class="card-shadow rounded-xl">
+              <img
+                src="./images/content/image-catalog-1.jpg"
+                alt=""
+                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+              />
+            </div>
+            <div
+              class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
+            >
+              <h5 class="text-lg font-semibold">Living Room</h5>
+              <span>18.309 items</span>
+            </div>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item browse the room 1 -->
+          <!-- START: item browse the room 2 -->
+          <div
+            class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
+          >
+            <div class="card-shadow rounded-xl">
+              <img
+                src="./images/content/image-catalog-4.jpg"
+                alt=""
+                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+              />
+            </div>
+            <div
+              class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
+            >
+              <h5 class="text-lg font-semibold">Decoration</h5>
+              <span>77.392 items</span>
+            </div>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item browse the room 2 -->
+          <!-- START: item browse the room 3 -->
+          <div
+            class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
+          >
+            <div class="card-shadow rounded-xl">
+              <img
+                src="./images/content/image-catalog-3.jpg"
+                alt=""
+                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+              />
+            </div>
+            <div
+              class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
+            >
+              <h5 class="text-lg font-semibold">Bed Room</h5>
+              <span>22.094 items</span>
+            </div>
+            <a href="details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item browse the room 3 -->
+          <!-- START: item browse the room 4 -->
+          <div class="relative col-span-9 row-span-1 md:col-span-4 card">
+            <div class="card-shadow rounded-xl">
+              <img
+                src="./images/content/image-catalog-2.jpg"
+                alt=""
+                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+              />
+            </div>
+            <div
+              class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
+            >
+              <h5 class="text-lg font-semibold">Children Room</h5>
+              <span>807 items</span>
+            </div>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item browse the room 4 -->
+        </div>
+      </div>
+    </section>
+    <!-- END: Browse The Room -->
 
+    <!-- START: Just Arrived -->
+    <section class="flex flex-col py-16">
+      <div class="container mx-auto mb-4">
+        <div class="flex justify-center text-center mb-4">
+          <h3 class="text-2xl capitalize font-semibold">
+            Just Arrived<br />
+            This Summer For You
+          </h3>
+        </div>
+      </div>
+      <div class="overflow-x-hidden px-4" id="carousel">
+        <div class="container mx-auto"></div>
+        <div class="flex -mx-4 flex-row relative">
+          <!-- START: item carousel 1 -->
+          <div class="px-4 relative card">
+            <div
+              class="rounded-xl overflow-hidden card-shadow"
+              style="width: 287px; height: 386px"
+            >
+              <img
+                src="./images/content/img-carousel-1.jpg"
+                alt="cangkir"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Cangkir Mautie</h5>
+            <span>IDR 89.300</span>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item carousel 1 -->
+
+          <!-- START: item carousel 2 -->
+          <div class="px-4 relative card">
+            <div
+              class="rounded-xl overflow-hidden card-shadow"
+              style="width: 287px; height: 386px"
+            >
+              <img
+                src="./images/content/img-carousel-2.jpg"
+                alt="cangkir"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Bankyu Minimax</h5>
+            <span>IDR 69.999</span>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item carousel 2 -->
+
+          <!-- START: item carousel 3 -->
+          <div class="px-4 relative card">
+            <div
+              class="rounded-xl overflow-hidden card-shadow"
+              style="width: 287px; height: 386px"
+            >
+              <img
+                src="./images/content/img-carousel-3.jpg"
+                alt="cangkir"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
+            <span>IDR 12.000.000</span>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item carousel 3 -->
+
+          <!-- START: item carousel 4 -->
+          <div class="px-4 relative card">
+            <div
+              class="rounded-xl overflow-hidden card-shadow"
+              style="width: 287px; height: 386px"
+            >
+              <img
+                src="./images/content/img-carousel-4.jpg"
+                alt="cangkir"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Watch Notes X</h5>
+            <span>IDR 7.600.999</span>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item carousel 4 -->
+
+          <!-- START: item carousel 5 -->
+          <div class="px-4 relative card">
+            <div
+              class="rounded-xl overflow-hidden card-shadow"
+              style="width: 287px; height: 386px"
+            >
+              <img
+                src="./images/content/img-carousel-5.jpg"
+                alt="cangkir"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Racking Plants</h5>
+            <span>IDR 159.300</span>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item carousel 5 -->
+
+          <!-- START: item carousel 3 -->
+          <div class="px-4 relative card">
+            <div
+              class="rounded-xl overflow-hidden card-shadow"
+              style="width: 287px; height: 386px"
+            >
+              <img
+                src="./images/content/img-carousel-3.jpg"
+                alt="cangkir"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <h5 class="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
+            <span>IDR 12.000.000</span>
+            <a href="#details.html" class="stretched-link">
+              <!-- fake children -->
+            </a>
+          </div>
+          <!-- END: item carousel 3 -->
+        </div>
+      </div>
+    </section>
+    <!-- END: Just Arrived -->
+
+    <!-- START: Clients -->
+    <div class="container mx-auto py-8">
+      <div class="flex justify-center flex-wrap">
+        <div
+          class="w-full flex auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
+        >
+          <img
+            src="./images/content/logo-adobe.png"
+            alt="logo adobe"
+            class="mx-auto"
+          />
+        </div>
+
+        <div
+          class="w-full flex auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
+        >
+          <img
+            src="./images/content/logo-ikea.png"
+            alt="logo ikea"
+            class="mx-auto"
+          />
+        </div>
+
+        <div
+          class="w-full flex auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
+        >
+          <img
+            src="./images/content/logo-herman-miller.png"
+            alt="logo herman-miller"
+            class="mx-auto"
+          />
+        </div>
+
+        <div
+          class="w-full flex auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
+        >
+          <img
+            src="./images/content/logo-miele.png"
+            alt="logo miele"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- END: Clients -->
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga = function () {
