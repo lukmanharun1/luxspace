@@ -118,6 +118,6 @@ a.cart svg g circle.dot {
   @apply hidden;
 }
 
-a.cart.filled svg g circle.dot {
+a.cart.cart-filled svg g circle.dot {
   @apply block;
 }
